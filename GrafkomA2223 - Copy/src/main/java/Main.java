@@ -124,6 +124,14 @@ public class Main {
 //            new ArrayList<>(),
 //            new Vector4f(0.0f,1.0f,1.0f,1.0f)
 //        ));
+
+        Vector4f warnaMejaTv = new Vector4f(112/255f, 70/255f, 35/255f, 1f);
+//        Vector4f warnaLantai = new Vector4f(150/255f, 133/255f, 112/255f, 1f);
+        Vector4f warnaTembok = new Vector4f(252/255f, 238/255f, 217/255f,1.f);
+        Vector4f warnaTv = new Vector4f(3/255f, 3/255f, 3/255f,1.f);
+        Vector4f warnaSofa = new Vector4f(79/255f, 110/255f, 126/255f, 1.f);
+
+
         List<ShaderProgram.ShaderModuleData> shader = Arrays.asList(
                 //shaderFile lokasi menyesuaikan objectnya
                 new ShaderProgram.ShaderModuleData
@@ -133,10 +141,11 @@ public class Main {
                         ("resources/shaders/scene.frag"
                                 , GL_FRAGMENT_SHADER)
         );
+
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Dalam/a.obj"
 
@@ -144,7 +153,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Dalam/b.obj"
 
@@ -153,7 +162,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Dalam/c.obj"
 
@@ -161,7 +170,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Dalam/d.obj"
 
@@ -170,7 +179,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Dalam/e.obj"
 
@@ -179,18 +188,19 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Dalam/f.obj"
 
         ));
 
-        // Bangunan Luar
 
+
+        // Bangunan Luar
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(186/255f, 164/255f, 151/255f, 1f),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Luar/0.obj"
 
@@ -198,7 +208,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(186/255f, 164/255f, 151/255f, 1f),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Luar/0-5.obj"
 
@@ -206,7 +216,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Luar/a.obj"
 
@@ -215,7 +225,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Luar/b.obj"
 
@@ -224,7 +234,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Luar/c.obj"
 
@@ -233,7 +243,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Luar/d.obj"
 
@@ -242,7 +252,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Luar/e.obj"
 
@@ -251,7 +261,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Luar/f.obj"
 
@@ -260,7 +270,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Luar/g.obj"
 
@@ -269,7 +279,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Luar/h.obj"
 
@@ -278,17 +288,18 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTembok),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Env/Bangunan Luar/i.obj"
 
         ));
 
+
         // Lemari Kayu
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaMejaTv),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Lemari Kayu/Lemari Kayu.obj"
 
@@ -298,7 +309,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaMejaTv),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Lemari Pakaian/Lemari Pakaian.obj"
 
@@ -308,7 +319,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTv),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja Gaming/CPU.obj"
 
@@ -317,7 +328,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(153/255f, 0/255f,28/255f,1.0f),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja Gaming/headset.obj"
 
@@ -326,7 +337,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTv),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja Gaming/keyboard.obj"
 
@@ -335,7 +346,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTv),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja Gaming/monitor.obj"
 
@@ -344,7 +355,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(153/255f, 0/255f,28/255f,1.0f),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja Gaming/mouse.obj"
 
@@ -353,7 +364,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(0, 0, 0,1.0f),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja Gaming/mousepad.obj"
 
@@ -362,7 +373,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(181/255f, 181/255f, 181/255f,1.0f),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja Gaming/table.obj"
 
@@ -373,7 +384,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(17/255f, 114/255f, 54/255f,1.0f),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja Makan/Bunga.obj"
 
@@ -382,16 +393,78 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaMejaTv),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja Makan/Kursi.obj"
+
+        ));
+
+
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(warnaMejaTv),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Meja Makan/Kursi1.obj"
 
         ));
 
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaMejaTv),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Meja Makan/Kursi2.obj"
+
+        ));
+
+
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(warnaMejaTv),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Meja Makan/Kursi3.obj"
+
+        ));
+
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(warnaMejaTv),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Meja Makan/Kursi4.obj"
+        ));
+
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(warnaMejaTv),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Meja Makan/Kursi5.obj"
+        ));
+
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(warnaMejaTv),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Meja Makan/Kursi6.obj"
+        ));
+
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(warnaMejaTv),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Meja Makan/Kursi7.obj"
+
+        ));
+
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(181/255f, 181/255f,181/255f, 1f),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja Makan/Meja Besar.obj"
 
@@ -400,7 +473,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaMejaTv),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja Makan/Meja 1.obj"
 
@@ -409,7 +482,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(163/255f, 160/255f, 52/255f,1.0f),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja Makan/Tempat Minum 1.obj"
 
@@ -418,7 +491,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(163/255f, 160/255f, 52/255f,1.0f),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja Makan/Tempat Minum 2.obj"
 
@@ -427,7 +500,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(0, 0, 0, 1f),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja Makan/Vas.obj"
 
@@ -438,7 +511,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaMejaTv),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Meja TV/Meja TV.obj"
 
@@ -458,7 +531,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaSofa),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Sofa/Sofa.obj"
 
@@ -469,7 +542,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(180/255f, 162/255f, 105/255f, 1.0f),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Tempat Tdr/Bantal.obj"
 
@@ -478,7 +551,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(180/255f, 162/255f, 105/255f,1.0f),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Tempat Tdr/Kasur.obj"
 
@@ -488,7 +561,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTv),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Tempat Tdr/Penyangga.obj"
 
@@ -497,7 +570,7 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(94/255f, 48/255f, 22/255f, 1.0f),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/Tempat Tdr/Seprai.obj"
 
@@ -508,18 +581,94 @@ public class Main {
         objects.add(new Sphere(
                 shader,
                 new ArrayList<>(),
-                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                new Vector4f(warnaTv),
                 new ArrayList<>(),
                 "resources/Aset/ABlend/TV/TV.obj"
 
         ));
 
 
+        // Kulkas
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(warnaTv),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Kulkas/Kulkas.obj"
+        ));
+
+        // Kitchen Set
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(252/255f, 228/255f, 191/255f, 1.f),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Kitchen Set/Kitchen Set.obj"
+        ));
+
+
+        // Lampu Keluarga
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(252/255f, 228/255f, 191/255f, 1.f),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Lampu Keluarga/Cartridge.obj"
+        ));
+
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(warnaMejaTv),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Lampu Keluarga/Tiang Lampu.obj"
+        ));
+
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(0, 0, 0, 1f),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Lampu Keluarga/Kaki Lampu.obj"
+        ));
+
+
+        // Meja Kamar
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(warnaMejaTv),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Meja Kamar/Meja Kamar.obj"
+        ));
 
 
 
 
+        // Lampu Kamar
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(252/255f, 228/255f, 191/255f, 1.f),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Lampu Kamar/Cartridge.obj"
+        ));
 
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(warnaMejaTv),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Lampu Kamar/Tiang.obj"
+        ));
+
+        objects.add(new Sphere(
+                shader,
+                new ArrayList<>(),
+                new Vector4f(0, 0, 0, 1f),
+                new ArrayList<>(),
+                "resources/Aset/ABlend/Lampu Kamar/Kaki.obj"
+        ));
 
     }
     public void input(){
