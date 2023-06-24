@@ -670,6 +670,9 @@ public class Main {
                 "resources/Aset/ABlend/Lampu Kamar/Kaki.obj"
         ));
 
+
+
+
     }
     public void input(){
         float move = 0.1f;
@@ -696,9 +699,16 @@ public class Main {
             camera.addRotation((float)Math.toRadians(displayVec.x * 0.1f),
                     (float)Math.toRadians(displayVec.y * 0.1f));
         }
+        if(mouseInput.isRightButtonPressed()){
+            System.out.println(window.getMouseInput().getCurrentPos());
+        }
         if(window.getMouseInput().getScroll().y != 0){
             projection.setFOV(projection.getFOV()- (window.getMouseInput().getScroll().y*0.01f));
             window.getMouseInput().setScroll(new Vector2f());
+        }
+        if (window.isKeyPressed(GLFW_KEY_1)) {
+            objects.get(0).translateObject(0.0f,1.0f,0.0f);
+
         }
     }
     public void loop(){

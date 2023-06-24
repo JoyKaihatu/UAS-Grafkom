@@ -373,14 +373,14 @@ public class Sphere extends Circle{
         uniformsMap.setUniform("dirLight.specular", new Vector3f(0.5f,0.5f,0.5f));
         //posisi pointLight
         Vector3f[] _pointLightPositions = {
-            new Vector3f(0.7f, 0.2f, 2.0f),
+            new Vector3f(6.751f, -7.0331f, 3.1479f),
             new Vector3f(2.3f, -3.3f, -4.0f),
-            new Vector3f(-4.0f, 2.0f, -12.0f),
+            new Vector3f(4.160f, 3.550f, 5f),
             new Vector3f(0.0f, 0.0f, -3.0f)
             };
         for(int i = 0;i< _pointLightPositions.length;i++){
             uniformsMap.setUniform("pointLights["+ i +"].position",_pointLightPositions[i]);
-            uniformsMap.setUniform("pointLights["+ i +"].ambient", new Vector3f(0.05f,0.05f,0.05f));
+            uniformsMap.setUniform("pointLights["+ i +"].ambient", new Vector3f(0.5f,0.5f,0.05f));
             uniformsMap.setUniform("pointLights["+ i +"].diffuse", new Vector3f(0.8f,0.8f,0.8f));
             uniformsMap.setUniform("pointLights["+ i +"].specular", new Vector3f(1.0f,1.0f,1.0f));
             uniformsMap.setUniform("pointLights["+ i +"].constant",1.0f );
