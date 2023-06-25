@@ -59,7 +59,7 @@ vec3 CalcSpotLight(SpotLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
 
     //specular shading
     vec3 reflectDir = reflect(-lightDir, normal);
-    float spec = pow(max(dot(viewDir, reflectDir), 0.0),3072);
+    float spec = pow(max(dot(viewDir, reflectDir), 0.0),2);
 
     //attenuation
     float distance    = length(light.position - FragPos);

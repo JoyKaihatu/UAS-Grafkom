@@ -1,6 +1,8 @@
 import Engine.*;
 import Engine.Object;
+import org.joml.Matrix4f;
 import org.joml.Vector2f;
+import org.joml.Vector3f;
 import org.joml.Vector4f;
 import org.lwjgl.opengl.GL;
 
@@ -23,7 +25,6 @@ public class Main {
 
     private ArrayList<Object> objectsPointsControl
             = new ArrayList<>();
-
     private MouseInput mouseInput;
     int countDegree = 0;
     Projection projection = new Projection(window.getWidth(),window.getHeight());
@@ -670,6 +671,14 @@ public class Main {
                 "resources/Aset/ABlend/Lampu Kamar/Kaki.obj"
         ));
 
+        objects.add(new Sphere(shader,
+                new ArrayList<>(),
+                new Vector4f(1.0f,1.0f,1.0f,1.0f),
+                Arrays.asList(19f,6.5f,-6.016f),
+                1f, 1f,1f,
+                new ArrayList<>()));
+
+
 
 
 
@@ -694,6 +703,18 @@ public class Main {
         if (window.isKeyPressed(GLFW_KEY_S)){
             camera.moveDown(move);
         }
+        if (window.isKeyPressed(GLFW_KEY_I)){
+            camera.addRotation(move/10,0f);
+        }
+        if (window.isKeyPressed(GLFW_KEY_K)){
+            camera.addRotation(-move/10,0f);
+        }
+        if (window.isKeyPressed(GLFW_KEY_J)){
+            camera.addRotation(0,-move/10);
+        }
+        if (window.isKeyPressed(GLFW_KEY_L)){
+            camera.addRotation(0,move/10);
+        }
         if(mouseInput.isLeftButtonPressed()){
             Vector2f displayVec = window.getMouseInput().getDisplVec();
             camera.addRotation((float)Math.toRadians(displayVec.x * 0.1f),
@@ -708,6 +729,9 @@ public class Main {
         }
         if (window.isKeyPressed(GLFW_KEY_1)) {
             objects.get(0).translateObject(0.0f,1.0f,0.0f);
+
+        }
+        if (window.isKeyPressed(GLFW_KEY_2)){
 
         }
     }

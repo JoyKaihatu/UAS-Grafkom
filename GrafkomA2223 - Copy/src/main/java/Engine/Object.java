@@ -107,6 +107,11 @@ public class Object extends ShaderProgram{
                 Utils.listoFloat(verticesColor),
                 GL_STATIC_DRAW);
     }
+
+    public Matrix4f getModel() {
+        return model;
+    }
+
     public void drawSetup(Camera camera, Projection projection){
         bind();
         uniformsMap.setUniform(
